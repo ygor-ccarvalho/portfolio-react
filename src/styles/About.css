@@ -1,0 +1,81 @@
+/* Estilos da Seção Sobre */
+.sobre {
+    grid-area: sobre;
+    display: grid;
+    background-color: #fff;
+    max-width: var(--max-width-size);
+    margin: 0;
+    flex-wrap: wrap;
+    height: 92vh;
+}
+
+.sobre .sobre-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre .sobre-container .perfil {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sobre .sobre-container .perfil img {
+    position: absolute;
+    width: 100%;
+}
+
+.sobre .sobre-container .sobre-informacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.sobre .sobre-container .sobre-informacao h3 {
+    font-weight: 700;
+    font-size: 28.43px;
+}
+
+.sobre .sobre-container .sobre-informacao p {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 30px 0;
+}
+
+.sobre .sobre-container .sobre-informacao .hard-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    /* espaço entre ícones */
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.sobre .sobre-container .sobre-informacao .hard-skills a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease;
+}
+
+.sobre .sobre-container .sobre-informacao .hard-skills a:hover {
+    transform: scale(1.1);
+}
+
+.sobre .sobre-container .sobre-informacao .hard-skills img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    /* mantém proporção */
+}
