@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/About.css';
 import { techSkillsData } from '../data/portfolioData';
+import perfil from '../assets/images/perfil/perfil.jpg';
+
 
 const About: React.FC = () => {
   return (
@@ -8,7 +10,7 @@ const About: React.FC = () => {
       <div className="sobre-container">
         <div className="perfil">
           {/* A imagem será tratada como um asset */}
-          <img src="./src/assets/images/perfil/perfil.jpg" alt="Foto de perfil" />
+          <img src={perfil} alt="Foto de perfil" />
         </div>
 
         <div className="sobre-informacao">
