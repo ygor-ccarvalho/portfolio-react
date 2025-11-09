@@ -14,7 +14,7 @@ const Home: React.FC = () => {
           <div className="social-sobre">
             <a href="#sobre">Mais sobre mim</a>
           </div>
-
+ 
           <div className="icone-social">
             {}
             <a href="https://www.linkedin.com/in/ygorcarvalhodev/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
