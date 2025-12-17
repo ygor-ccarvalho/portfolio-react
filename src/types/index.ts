@@ -1,9 +1,17 @@
-// src/types/index.ts
+export type TechKey =
+  | 'node'
+  | 'typescript'
+  | 'javascript'
+  | 'react'
+  | 'html'
+  | 'css'
+  | 'ccna1'
+  | 'networksecurity';
 
 export interface Project {
   title: string;
   description: string;
-  technologies: string[];
+  technologies: TechKey[];
   liveLink: string;
   githubLink: string;
   imageSrc: string;
@@ -16,6 +24,7 @@ export interface TechSkill {
   imageAlt: string;
   badgeLink?: string;
 }
+
 
 export interface profileImage {
   src: string;
