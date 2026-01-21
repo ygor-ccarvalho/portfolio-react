@@ -5,13 +5,12 @@
     z-index: 1;
 }
 
-.header .header-container {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 75px;
     background-color: #ffffff;
-
 }
 
 .header h1 {
@@ -29,20 +28,20 @@
     justify-content: space-between;
 }
 
-.header nav ul li a {
+.header nav a {
     font-weight: 400;
     padding: 30px;
     border-radius: 50px;
     transition: 0.3s;
 }
 
-.header nav ul li a:hover {
+.header nav a:hover {
     color: var(--cor-menu-ativo);
     text-decoration: underline;
 }
 
 /* Estilos do Menu Hamburguer */
-.header .menu-button {
+.menu-button {
     display: none;
     background: none;
     border: none;
@@ -52,12 +51,12 @@
     align-self: flex-end;
 }
 
-.header .menu {
+.menu {
     display: flex;
     flex-direction: column;
 }
 
-.header .hamburguer {
+.hamburguer {
     background-color: #000;
     position: relative;
     display: block;
@@ -68,8 +67,8 @@
     transition: 0.5s ease-in-out;
 }
 
-.header .hamburguer:before,
-.header .hamburguer:after {
+.hamburguer:before,
+.hamburguer:after {
     background-color: #000;
     content: "";
     display: block;
@@ -79,35 +78,36 @@
     transition: 0.2s ease-in-out;
 }
 
-.header .hamburguer:before {
+.hamburguer:before {
     top: -10px;
 }
 
-.header .hamburguer:after {
+.hamburguer:after {
     bottom: -10px;
 }
 
-.header .hamburguer.open {
+.hamburguer.open {
     transform: rotate(45deg);
 }
 
-.header .hamburguer.open:before {
+.hamburguer.open:before {
     transform: rotate(90deg);
     top: 0;
 }
 
-.header .hamburguer.open:after {
+.hamburguer.open:after {
     transform: rotate(90deg);
     top: 0;
 }
 
 /* Media Query para o menu hamburguer */
 @media (max-width: 900px) {
+    .header {
+        width: 100vw;
+        margin-bottom: 2rem;
+    }
 
-.header {
-    width: 100vw;
-}
-    .header .menu-button {
+    .menu-button {
         display: block;
     }
 
@@ -136,5 +136,8 @@
         text-align: center;
         padding: 20px;
         display: block;
+    }
+    .logo{
+        display: none;
     }
 }

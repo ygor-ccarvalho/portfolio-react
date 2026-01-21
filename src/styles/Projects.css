@@ -9,7 +9,7 @@
     margin-bottom: 40px;
 }
 
-.projetos .projetos-container .projeto-informacoes {
+.projeto-informacoes {
     display: flex;
     flex-direction: column;
     background-color: #f0f0f0;
@@ -17,54 +17,52 @@
     margin: 20px 0;
 }
 
-.projetos .projetos-container .projeto-informacoes .projeto {
+.projeto {
     display: flex;
     width: 100%;
     justify-content: space-around;
 }
 
-.projetos .projetos-container .projeto-informacoes .projeto a {
+.projeto a {
     width: 45%;
 }
 
-.projetos .projetos-container .projeto-informacoes .projeto .imagem-projeto {
+.imagem-projeto {
     width: 45%;
 }
 
-.projetos .projetos-container .projeto-informacoes .projeto .imagem-projeto .demo-projeto {
+.demo-projeto {
     width: 100%;
     margin: 20px 0;
     border-radius: 20px;
 }
 
-.projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto {
+.descricao-projeto {
     margin: 20px;
     width: 40%;
     text-align: justify;
 }
 
-.projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto .tecnologias-usadas {
-   gap: 20px;
+.tecnologias-usadas {
+    gap: 20px;
 }
 
-.projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto .tecnologias-usadas img {
+.tecnologias-usadas img {
     width: 30px;
     height: 30px;
     margin: 3px;
-  
-    
 }
 
-.projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto p {
+.descricao-projeto p {
     margin: 20px 0;
 }
 
-.projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto .botoes-projeto {
+.botoes-projeto {
     display: flex;
     align-items: center;
 }
 
-.projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto .visite-projeto {
+.visite-projeto {
     border-style: solid;
     border-radius: 50px;
     padding: 10px 20px;
@@ -73,17 +71,31 @@
     text-align: center;
 }
 
-.projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto .visite-projeto:hover {
+.visite-projeto:hover {
     color: var(--cor-ativo);
     background-color: var(--cor-bg-ativo);
 }
 
-.projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto .codigo-projeto {
+.codigo-projeto {
     font-size: 40px;
     margin-left: 20px;
 }
-.git_icon{
+
+.git_icon {
     font-size: 45px;
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 900px) {
+    .projetos {
+        height: auto;
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .projeto {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
