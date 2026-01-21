@@ -44,7 +44,7 @@ const ProjectItem: React.FC<Project> = ({
             Visitar o projeto
           </a>
 
-          <a
+          <a className="btn-github"
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"

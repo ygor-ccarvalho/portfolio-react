@@ -2,7 +2,6 @@
 .projetos {
     grid-area: projetos;
     display: grid;
-    height: 92vh;
 }
 
 .projeto {
@@ -90,12 +89,49 @@
 @media (max-width: 900px) {
     .projetos {
         height: auto;
-        width: 100%;
         padding: 2rem 0;
+    }
+
+    .projetos-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
     }
 
     .projeto {
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
     }
+
+    .descricao-projeto {
+        width: 80%;
+    }
+
+    .descricao-projeto h3 {
+        text-align: center;
+    }
+    .tecnologias-usadas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+     }
+     .botoes-projeto{
+        justify-content: center;
+        margin-top: 0.5rem;
+     }
+     .projeto .visite-projeto{
+        width: 25%;
+     }
+     .projeto .btn-github{
+        margin-left: 10px;
+        width: 10%;
+     }
+     
+
+    
 }
