@@ -18,8 +18,8 @@
 
 .sobre .sobre-container .perfil {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 9.375rem;
+    height: 9.375rem;
     overflow: hidden;
     position: relative;
 }
@@ -39,12 +39,12 @@
 
 .sobre .sobre-container .sobre-informacao h3 {
     font-weight: 700;
-    font-size: 28.43px;
+    font-size: 1.776rem;
 }
 
 .sobre .sobre-container .sobre-informacao p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     margin: 30px 0;
 }
 
@@ -54,7 +54,6 @@
     justify-content: center;
     align-items: center;
     gap: 25px;
-    /* espaço entre ícones */
     width: 100%;
     margin-top: 10px;
 
@@ -77,5 +76,39 @@
     width: 70px;
     height: 70px;
     object-fit: contain;
-    /* mantém proporção */
+
+}
+
+@media (max-width: 900px) {
+  
+    .sobre .sobre-container .sobre-informacao p {
+        margin: 1.875rem 0;
+        width: 85vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre .sobre-container .perfil {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .sobre .sobre-container .sobre-informacao h3 {
+        font-size: 1.5rem;
+    }
+
+    .sobre .sobre-container .sobre-informacao p {
+        font-size: 0.9rem;
+        margin: 20px 0;
+    }
+
+    .sobre .sobre-container .sobre-informacao .hard-skills {
+        gap: 15px;
+    }
+
+    .sobre .sobre-container .sobre-informacao .hard-skills a,
+    .sobre .sobre-container .sobre-informacao .hard-skills img {
+        width: 50px;
+        height: 50px;
+    }
 }
