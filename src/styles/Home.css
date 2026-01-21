@@ -70,6 +70,7 @@
 
 @media (max-width: 900px) {
     .home {
+        height: auto;
         max-width: 100%;
         justify-content: center;
         align-items: center;
