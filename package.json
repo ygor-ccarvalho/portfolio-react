@@ -4,9 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://ygor-ccarvalho.github.io/portifolio-react",
-
-  
-
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
