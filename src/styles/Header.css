@@ -37,7 +37,7 @@
 
 .header nav {
     position: relative;
-    /* referência para o menu mobile */
+    
 }
 
 .header nav ul {
@@ -85,7 +85,6 @@
     transition: 0.4s ease-in-out;
 }
 
-/* Estado aberto */
 .hamburguer.open:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -104,35 +103,33 @@
 
 @media (max-width: 900px) {
 
-    /* Esconde menu desktop */
+    
     .header nav ul {
         display: none;
     }
 
-    /* Botão aparece */
     .menu-button {
         display: block;
     }
 
-    /* Menu mobile */
     @media (max-width: 900px) {
-    .header nav ul.open {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
+        .header nav ul.open {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
 
-        top: calc(100% + 10px);
-        right: 0;
+            top: calc(100% + 10px);
+            right: 0;
 
-        width: 200px;
-        padding: 20px;
-        background-color: #ffffff;
+            width: 200px;
+            padding: 20px;
+            background-color: #ffffff;
 
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        z-index: 1000;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+        }
     }
-}
 
 
     .header nav ul.open a {
@@ -141,7 +138,7 @@
         display: block;
     }
 
-    /* Opcional: esconder logo no mobile */
+   
     .logo {
         display: none;
     }
